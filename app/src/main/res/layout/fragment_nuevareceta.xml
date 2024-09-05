@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.nuevarecetaFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/agregar_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/agregar_rec"
+                android:textAppearance="@style/agregar_rec"
+                android:gravity="center"
+                android:paddingBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/image_16"
+                android:layout_width="164dp"
+                android:layout_height="164dp"
+                android:layout_gravity="center"
+                android:src="@drawable/image_16"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/nombre_de_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_de_l"
+                android:textAppearance="@style/nombre_de_l"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/rectangle_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_2"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/ingrediente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingrediente"
+                android:textAppearance="@style/ingrediente"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/rectangle_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_2"
+                android:layout_marginBottom="1dp" />
+
+            <TextView
+                android:id="@+id/preparacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/preparacion"
+                android:textAppearance="@style/preparacion"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/rectangle_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_2"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:minLines="5"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria"
+                android:textAppearance="@style/categoria"
+                android:paddingBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinner_categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/departamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/departamento"
+                android:textAppearance="@style/categoria"
+                android:paddingBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinner_departamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/departamentos_array" />
+
+            <Button
+                android:id="@+id/publicar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/frmBtnpubli"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
